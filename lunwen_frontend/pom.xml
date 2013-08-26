@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>com.personal.clm</groupId>
+		<artifactId>lunwen_repository</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>  <!--本例中此处是可选的 -->
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	
+	<artifactId>lunwen_frontend</artifactId>
+	<packaging>war</packaging>
+	
+	<name>lunwen_frontend Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+	
+		<!-- projectB -->
+		<!-- <projectB.version>0.0.1-SNAPSHOT</projectB.version> -->
+		
+	</properties>
+	
+	<dependencies>
+		<!-- 
+		<dependency>
+			<groupId>com.nfswuxi.clm</groupId>
+			<artifactId>projectB</artifactId>
+			<version>${projectB.version}</version>
+		</dependency> 
+		-->
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	
+		<finalName>lunwen_frontend</finalName>
+	</build>
+</project>
