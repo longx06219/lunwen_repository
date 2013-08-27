@@ -90,13 +90,6 @@
 		<servlet-name>dispatcher</servlet-name>
 	</filter-mapping>
 
-	<jsp-config>
-		<taglib>
-			<taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
-			<taglib-location>/WEB-INF/tld/c.tld</taglib-location>
-		</taglib>
-	</jsp-config>
-
 	<welcome-file-list>
 		<welcome-file>home</welcome-file>
 	</welcome-file-list>

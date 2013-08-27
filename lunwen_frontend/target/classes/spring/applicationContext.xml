@@ -11,7 +11,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
  
  	<!-- 对指定的包进行扫描 -->
-	<context:component-scan base-package="com.nfswuxi.ws.client" />
+	<context:component-scan base-package="com.personal.clm" />
 	<context:annotation-config/>
  	
     <!-- ========================= RESOURCE DEFINITIONS ========================= -->
@@ -22,16 +22,12 @@
 		<property name="locations">
 			<list>
 				<value>classpath:common/jdbc.properties</value>
-				<value>classpath:ws/upload.properties</value>
 				<!-- 服务器生产环境配置 -->
-				<value>file:/webservice/config.properties</value>
+				<value>file:/lunwen/config.properties</value>
 			</list>
 		</property>
 	</bean>
 	
 	<!-- <context:property-placeholder location="classpath:spring/data-access.properties"/> -->
 	
-	<bean class="com.nfswuxi.ws.client.model.ConfigHandler">
-		<property name="wsUrl" value="${wsUrl}" />
-	</bean>
 </beans>

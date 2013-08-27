@@ -14,7 +14,7 @@
 	<import resource="mvc-view-config.xml" />
 
 	<!-- - POJOs labeled with the @Controller and @Service annotations are auto-detected. -->
-	<context:component-scan base-package="com.nfswuxi.frontend.web" />
+	<context:component-scan base-package="com.personal.clm.web" />
 
 	<mvc:annotation-driven conversion-service="conversionService" validator="validator"/>
 	
@@ -27,7 +27,7 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/*" /> 
-			<bean class="com.nfswuxi.frontend.web.interceptor.ExceptionLoggerInterceptor"></bean>
+			<bean class="com.personal.clm.web.interceptor.ExceptionLoggerInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors> 
 
@@ -45,23 +45,25 @@
 
 	<bean id="conversionService"
 		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+		<!-- 
 		<property name="formatters">
 			<list>
 				<bean class="com.nfswuxi.frontend.web.support.formatter.TaskTypeFormatterAnnotationFormatterFactory" />
-			</list>
-			<!-- 
+			</list> 
 			<set>
 				<bean class="com.nfswuxi.frontend.web.support.formatter.TaskTypeFormatter" />
 			</set> 
-			-->
 		</property>
+		-->
+		<!-- 
 		<property name="converters">
 			<list>
 				<bean class="com.nfswuxi.frontend.web.support.converter.StringToDateConverter">
 					<constructor-arg value="yyyy-MM-dd"></constructor-arg>
 				</bean> 
-			</list>
+			</list> 
 		</property>
+		-->
 	</bean>
 
 	<!-- 以下 validator ConversionService 在使用 mvc:annotation-driven 会 自动注册？ -->
