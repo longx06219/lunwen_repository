@@ -10,7 +10,7 @@ public class HomeController {
 	@RequestMapping(value="/home", method=RequestMethod.GET)
 	public String home () throws Exception{
 		int i = 1/0;
-		
+		System.out.println(i);
 		return "home";
 	}
 
