@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
-	<display-name>platform-wsclient</display-name>
+	<display-name>lunwen-frontend</display-name>
 
 	<!-- 以下3项参数与log4j的配置相关 -->
 	<context-param>
@@ -69,10 +69,12 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	<!--
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/home</url-pattern>
 	</servlet-mapping>
+	-->
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
