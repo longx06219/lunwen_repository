@@ -41,7 +41,7 @@
 	<mvc:resources mapping="/webjars/**"
 		location="classpath:/META-INF/resources/webjars/" />
 
-	<mvc:view-controller path="/" view-name="welcome" />
+	<mvc:view-controller path="/" view-name="home" />
 
 	<bean id="conversionService"
 		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
