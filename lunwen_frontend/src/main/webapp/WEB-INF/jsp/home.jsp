@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-hello clm!
+自动构建
 </body>
 </html>
